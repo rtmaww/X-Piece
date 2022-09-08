@@ -44,10 +44,15 @@ After this process, the optimal word tokenization distribution of source dataset
 
 ### X-piece Key Arguments
 `--label_mode` : label space. "plo" means just including [PER LOC ORG] and "ontonotes" means including all labels in OntoNotes 5.0. 
+
 `--source_domain` : source domain name
+
 `--target_domain` : target domain name
+
 `--source_path` : source domain dataset path 
+
 `--target_path` : target domain dataset path 
+
 `--subword_data_dir` : the path to save the xpiece results
 
 Also, we have the shell script `make_xpiece.sh` as **the demo and for reference**. 
@@ -67,13 +72,13 @@ python3 run_ner_ot.py \
 ```  
 
 ### Run NER Key Arguments
-`--src` : same as `--source_domain` in `bpe_ot_new.py`
-`--tgt` : same as `--target_domain` in `bpe_ot_new.py` 
-`--train_data_dir` : train dataset directory 
-`--test_data_dir` : test dataset directory   
-Note that in train dataset directory, `train.txt` is needed, which contains ground-truth labels, while in test dataset directory, `train_lexicon.txt` & `test.txt` is needed, which is the raw text labeled by distant labels & test. 
-`--log_file` : the path to save test results
-`--tokenize` : choose whether to use xpiece. "ot" means TO USE and "plain" means NOT. 
+`--src` : same as `--source_domain` in `bpe_ot_new.py`  
+`--tgt` : same as `--target_domain` in `bpe_ot_new.py`  
+`--train_data_dir` : train dataset directory  
+`--test_data_dir` : test dataset directory    
+Note that in train dataset directory, `train.txt` is needed, which contains ground-truth labels, while in test dataset directory, `train_lexicon.txt` & `test.txt` is needed, which is the raw text labeled by distant labels & test.  
+`--log_file` : the path to save test results  
+`--tokenize` : choose whether to use xpiece. "ot" means TO USE and "plain" means NOT.  
 
 Also, we have the shell script `run_ner_conll.sh` as **the demo and for reference**. 
 
