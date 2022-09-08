@@ -1,0 +1,5 @@
+seqeval
+tqdm
+pot
+torch==1.10.0
+transformers
