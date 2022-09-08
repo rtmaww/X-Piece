@@ -43,18 +43,12 @@ python3 bpe_ot_new.py \
 After this process, the optimal word tokenization distribution of source dataset will be calculated and saved as `ot_datas/conll2ontonotes/ot_list.json` and `ot_datas/conll2ontonotes/ot_ratio.json`, respectively containing the **segmentations** & the **corresponding probabilities**. 
 
 ### X-piece Key Arguments
-`--label_mode` : label space. "plo" means just including [PER LOC ORG] and "ontonotes" means including all labels in OntoNotes 5.0. 
-
-`--source_domain` : source domain name
-
-`--target_domain` : target domain name
-
-`--source_path` : source domain dataset path 
-
-`--target_path` : target domain dataset path 
-
-`--subword_data_dir` : the path to save the xpiece results
-
+`--label_mode` : label space. "plo" means just including [PER LOC ORG] and "ontonotes" means including all labels in OntoNotes 5.0.  
+`--source_domain` : source domain name  
+`--target_domain` : target domain name  
+`--source_path` : source domain dataset path   
+`--target_path` : target domain dataset path   
+`--subword_data_dir` : the path to save the xpiece results  
 Also, we have the shell script `make_xpiece.sh` as **the demo and for reference**. 
 
 ## Run NER
